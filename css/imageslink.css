@@ -1,0 +1,64 @@
+
+/* Image Gallery */
+
+.imageLink{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin-bottom: 3rem !important;
+} 
+
+.imageLink .imgCont{
+    width: 15rem !important;
+    text-align: center;
+    
+}
+
+.imgCont:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.733),  0 .6rem 2rem 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.imageLink .imgCont img{
+    width: 15rem !important;
+    border-radius: .5rem;
+    margin-bottom: 1rem !important;
+}
+
+.imgCont a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+   
+}
+.imgCont a:hover{
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 520px) {
+     .imageLink{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    } 
+    .imageLink .imgCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        margin-bottom: 2rem !important;
+        width: 35rem !important;
+    } 
+
+.imageLink .imgCont img{
+    width: 35rem !important;
+    
+}
+.imgCont a{
+
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+   
+}
+
+}

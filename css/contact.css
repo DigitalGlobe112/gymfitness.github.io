@@ -1,0 +1,145 @@
+.heading h1{
+    word-spacing: .5rem !important; 
+}
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact div{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem !important;
+    background-color: rgba(218, 218, 218, 0.11);
+}
+.contact div i{
+    font-size: 7rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2rem !important;
+
+    
+   
+}
+
+.contact div h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+   
+}
+
+.contact div h4{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 2rem !important;
+}
+
+.contact div a{
+    color: white;
+    font-size: 2rem !important;
+    text-decoration: none;
+    text-align: center !important;
+
+}
+
+.contact div a:hover{
+    color: dodgerblue;
+    text-decoration: underline .1rem solid dodgerblue;
+
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+}
+
+
+
+.input-group{
+    margin-bottom: 2rem !important;
+    width: 35rem;
+    
+}
+input{
+   width: 40rem ;
+}
+
+.input-group textarea{
+    width: 35rem;
+    height: 15rem;
+    padding: 0.75rem !important;
+    border: .1rem solid #ccc;
+    border-radius: 0.25rem !important; 
+    margin: auto;
+    font-size: 1.5rem !important;
+    resize: vertical;
+}
+
+textarea:focus{
+    outline: .1rem solid dodgerblue !important;
+    box-shadow: 0 0 .8rem 0 dodgerblue !important;
+    
+}
+
+
+.input-group textarea:focus{
+    outline: 0;
+    border-color: #777;
+    
+    }
+    
+    .input-group.success textarea{
+    border-color: #2ecc71;
+    
+    }
+    
+
+    .input-group.error textarea{
+    border-color: #e74c3c;
+    
+    }
+
+    .input-group .com{
+        color: #e74c3c;
+        position: relative !important;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        font-size: 1.5rem;
+        }
+  
+
+@media screen and (max-width: 500px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .contact div{
+        width: 40rem;
+        margin-bottom: 5rem !important;
+
+    }
+    .contact div h3{
+        font-size: 4rem;
+    }
+    
+    .contact div h4{
+        font-size: 2rem;
+    }
+    
+    .contact div a{
+        font-size: 3rem !important;
+    }
+}

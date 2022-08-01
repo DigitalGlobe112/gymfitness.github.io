@@ -1,0 +1,445 @@
+*{
+    margin: 0% !important;
+    padding: 0% !important;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --headingcolor: rgb(167, 117, 26);
+    --bgcolor: rgb(167, 117, 26);
+    --hovercolor: rgb(167, 117, 26);
+    --bghovercolor: rgb(109, 75, 12);
+}
+
+body{
+    background-color: #353b48;
+}
+.background{
+    background: url('../Images/banner02.jpg');
+    width: 100% !important;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: end;
+
+
+}
+
+
+
+.nav{
+    /* background: rgba(30, 31, 32, 0.418); */
+    background: rgba(30, 31, 32, 0.753);
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+   z-index: 10;
+
+}
+
+ .logo img{
+    width: 7rem;
+    height: auto;
+} 
+.cont{
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+.cont .brand{
+    margin-right: 2rem !important;
+    color: var(--headingcolor);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.leftNav ul li{
+    padding-right: 2rem !important;
+
+}
+.leftNav ul li a{
+    color: white;
+    font-size: 1.5rem !important;
+}
+
+.leftNav ul li a:focus{
+    color: var(--hovercolor) ;
+}
+
+.leftNav ul li a:hover{
+    color: var(--hovercolor);
+}
+
+.menuBtn{
+    background-color: white !important;
+    border-radius: .5rem !important;
+    /* width: 30px;
+    height: 30px; 
+    font-size: 17px;*/
+    font-size: 2rem;
+    
+}
+
+
+.rightNav{
+    background-color: var(--bgcolor);
+    width: 8rem;
+    padding: .3rem !important;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.rightNav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem !important;
+
+}
+
+.rightNav:hover{
+    background-color: var(--bghovercolor);
+    cursor: pointer;
+
+}
+
+
+ @media screen and (max-width: 990px) {
+      .leftNav ul li{
+        padding-top: 1rem !important;
+        text-align: center;
+    }
+
+    .rightNav{
+        margin: auto !important;
+    }
+
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+}
+
+.banner .tagLine{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 2.5rem !important;
+}
+.tagLine p{
+    font-size: 6rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 130%;
+
+}
+
+.tagLine .join{
+    background-color: var(--bgcolor);
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem !important;
+    cursor: pointer;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    border-radius: .5rem;
+
+}
+
+
+.tagLine .join:hover{
+    background-color: var(--bghovercolor)
+
+}
+
+/* ==================================
+                Our services
+================================== */
+
+.heading{
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
+.heading h1{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--headingcolor);
+    font-weight: 700;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation a .time{
+    background: url('../images/time3-3.jpg');
+    width: 25rem;
+    height: 25rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+
+}
+
+.navigation a .time:hover{
+    opacity: 0.7;
+    transform: scale(1.02);
+
+}
+
+.navigation a .workPlans{
+    background: url('../images/classes3-3.jpg');
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    background-size: cover;
+}
+
+.navigation a .workPlans:hover{
+    opacity: 0.7;
+    transform: scale(1.02);
+
+}
+
+.navigation a .contact{
+    background: url('../images/run3-3.jpg');
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    background-size: cover;
+}
+
+.navigation a .contact:hover{
+    opacity: 0.7;
+    transform: scale(1.02);
+
+}
+
+.navigation a{
+    text-decoration: none;
+
+}
+@media screen and (max-width: 850px){
+    html{
+        font-size: 56.25%;
+    }
+  
+}
+
+@media screen and (min-width: 300px) and (max-width: 990px) {
+    .leftNav ul li a{
+        font-size: 2rem !important;
+    }
+
+    .rightNav a{
+        font-size: 2rem !important;
+    }
+}
+
+.navigation h1{
+    background-color: var(--bgcolor);
+    color: white;
+    font-size: 2.8rem;
+    line-height: 0.9;
+    text-align: center;
+    font-style: italic;
+    padding: 1rem !important;
+    border-radius: .5rem;
+    width: 85%;
+}
+
+
+/* ===============================
+            Our Trainers
+   =============================== */
+
+  .trainers{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.train{
+    width: 34rem;
+    height: 42rem;
+    transform: skewX(-10deg);
+    z-index: 9;
+    background-color: rgba(218, 218, 218, 0.11);
+}
+
+.trainFirst{
+    margin-bottom: 8rem !important;
+}
+
+
+.train img{
+    width: 34rem;
+    height: auto;
+}
+
+.train h3{
+    color: var(--headingcolor);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1.5rem !important;
+}
+
+.train p{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.train a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin: auto !important;
+    font-size: 2rem;
+    padding: 0.2rem 1.5rem 0.2rem 1.5rem !important;
+    transform: skewX(10deg);
+    background-color: white;
+    font-weight: 500;
+    margin-top: 2rem !important;
+}
+
+
+/* =========================
+            About Us 
+    ===========================*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem !important;
+ 
+}
+
+.aim{
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    word-spacing: .5rem;
+    text-align: center;
+    margin-bottom: 3rem !important;
+    font-style: italic;
+    font-size: 3rem;
+}
+.about img{
+    width: 30rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.about p{
+    width: 45rem;
+    text-align: left;
+    margin-left: 5rem !important;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.more{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    margin: auto !important;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem !important;
+    background-color: white;
+    font-weight: 500;
+    margin-top: 2rem !important;
+}
+
+
+/* =============================
+            footer
+    ============================ */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+    text-align: center;
+}
+
+.footHead h3{
+    color: var(--headingcolor) !important; 
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+}
+
+.footHead ul{
+    margin-top: 2rem !important;
+    text-align: center;
+}
+
+.footHead ul li{
+    margin-top: .5rem !important;
+    color: white;
+    font-size: 1.5rem;
+    list-style: none;
+}
+.footHead ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footHead ul li a:hover{
+    color: var(--bghovercolor);
+}
+
+.icons a{
+    font-size: 2rem !important;
+}
+.icons a:hover{
+    color: rgb(14, 87, 155) !important;
+}
+
+.copy{
+    text-align: center;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.copy p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.copy p a{
+    text-decoration: none;
+    color: var(--headingcolor);
+}
+.copy p a:hover{
+    color: rgb(224, 153, 19);;
+}

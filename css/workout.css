@@ -1,0 +1,106 @@
+/* Image Gallery */
+
+.classCont{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin-bottom: 3rem !important;
+} 
+
+.classCont .imgCont{
+    width: 25rem !important;
+    height: 25rem;    
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imgCont h1{
+    color: white;
+    font-size: 2.2rem;
+    background-color: var(--bgcolor);
+    padding: .5rem .5rem .5rem .5rem !important;
+    border-radius: .5rem;
+    opacity: .5;
+     width: 23rem;
+    text-align: center; 
+}
+
+.imgCont h1:hover{
+    opacity: 1;
+}
+
+.imgCont:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.733),  0 .6rem 2rem 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 520px) {
+     .classCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    } 
+    .classCont .imgCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        margin-bottom: 4rem !important;
+        width: 40rem !important; 
+        height: 40rem !important;
+    } 
+
+.classCont .imgCont img{
+    width: 35rem !important;
+    
+}
+
+
+
+    
+}
+
+.weight-loss{
+ background: url('../images/weightloss3-3.jpg');   
+}
+
+.weight-gain{
+    background: url('../images/weightgain3-3.jpg');   
+}
+
+.cardio{
+    background: url('../images/cardio3-3.jpg');   
+
+}
+
+.run{
+    background: url('../images/run3-3.jpg');   
+
+}
+
+.warm-up{
+    background: url('../images/warmup3-3.jpg');   
+
+}
+.yoga{
+    background: url('../images/yoga3-3.jpg');   
+
+}
+.full-workout{
+    background: url('../images/weightlifting3-3.jpg');   
+
+}
+.upper-workout{
+    background: url('../images/upperworkout3-3.jpg');   
+
+}
+.lower-workout{
+    background: url('../images/lowerworkout3-3.jpg');   
+
+}

@@ -1,0 +1,60 @@
+.trainCont{
+    display: flex;
+    flex-direction: row;
+    width: 80rem;
+    margin:auto !important;
+    margin-bottom: 5rem !important;
+    justify-content: center;
+
+}
+
+.trainCont img{
+    border-radius: .5rem;
+    width: 30rem;
+    height: 30rem;
+
+}
+
+.trainCont .trainTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.trainTxt h1{
+    color: var(--headingcolor);
+}
+
+.trainTxt p{
+    color: white;
+    margin-top: 2rem !important;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    .trainCont{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        margin-bottom: 10rem !important;
+        width: 55rem;
+    }
+    .trainTxt{
+        margin-top: 3rem !important;
+    }
+    .trainCont img{
+        width: 50rem;
+        height: 50rem;
+    
+    }
+
+
+
+
+}
+
+

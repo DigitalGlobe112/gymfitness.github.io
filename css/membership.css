@@ -1,0 +1,444 @@
+html{
+    font-size: 62.5;
+}
+
+:root{
+    --border-color: #57606f;
+    --border-focus-color: #1e90ff;
+    --primary-color: rgb(11, 78, 179);
+}
+.firstSection{
+    width: 100% !important;
+    height: 10vh !important;
+}
+
+.plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem !important;
+}
+
+
+.plans .h3{
+    text-align: center;
+    padding: 1rem !important;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0.3rem;
+
+}
+.h3 h3{
+    font-size:3rem ;
+}
+
+.plans ul{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.plans ul li{
+    list-style: none;
+    font-size: 2rem;
+    padding-top: 1rem !important;
+    color: black;
+}
+
+.plans ul li i{
+    padding-right: 3rem !important;
+}
+
+.tick{
+    color: rgb(43, 124, 43);
+
+}
+
+.cross{
+    color: rgba(136, 5, 5, 0.966);
+    margin-right: 0.5rem !important;
+}
+
+
+
+/* Membership plans 02 */
+
+
+
+.form{
+    background-color: white;
+    width: 80%;
+    margin: auto !important;
+    border-radius: .5rem;
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+
+
+.plans .week{
+    padding-bottom: 4rem !important;
+}
+
+.plans .month{
+    padding-bottom: 4rem !important;
+}
+.input[type="radio"]{
+    display: none;
+}
+
+ .label{
+    position: relative;
+    font-family: sans-serif;
+    border: .2rem solid var(--border-focus-color);
+    border-radius: .5rem;
+    padding: 1rem 3rem !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 60rem ;
+
+
+}
+
+.label div{
+    margin-left: 2rem !important;
+}
+.label div .h3{
+    margin-left: -1rem !important;
+}
+
+
+
+
+
+.label:before{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    border: .3rem solid var(--border-focus-color);
+    border-radius: 50%;
+    margin-right: 4rem;
+}
+
+
+.input[type="radio"]:checked + label{
+    background-color: #57606f;
+    color: white ;
+}
+
+.input[type="radio"]:checked + label div ul li{
+    color: white;
+}
+.input[type="radio"]:checked + label div h3{
+    color: white;
+}
+
+.input[type="radio"]:checked + label:before{
+    height: 2rem;
+    width: 2rem;
+    border: .3rem solid var(--border-focus-color);
+    background-color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+/* Button */
+
+
+    .btns-group {
+        display: flex;
+        justify-content: end;
+        width: 60rem !important;
+        margin: auto !important;
+        
+        }
+
+    .btn{
+        font-size: 2rem !important;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem !important;
+        background-color: var(--border-color);
+        font-weight: 500;
+        margin-top: 2rem !important;
+        color: white;
+        border: none;
+        margin-bottom: 2rem !important;
+        width: 10rem !important;
+        margin-left: 2rem !important;
+    }
+
+    
+
+
+    .btn:hover{
+        background-color:#404752;
+        color: white;
+    }
+    .btn:focus{
+        background-color:#404752;
+        color: white;
+
+
+    }
+
+
+        /* Progressbar */
+        .progressbar {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        counter-reset: step;
+         margin-bottom: 8rem !important; 
+        }
+
+        .progressbar::before,
+        .progress {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: .4rem;
+        width: 100%;
+        background-color: #dcdcdc;
+        z-index: -1;
+        }
+
+        .progress {
+        background-color: var(--primary-color) !important; 
+        width: 0%;
+        transition: 0.3s;
+
+        }
+
+        .progress-step {
+        width: 4.1875rem;
+        height: 4.1875rem;
+        background-color: #dcdcdc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        }
+
+        .progress-step::before {
+        counter-increment: step;
+        content: counter(step);
+        }
+
+        .progress-step::after {
+        content: attr(data-title);
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        font-size: 1.85rem;
+        color: #666;
+        }
+
+        .progress-step-active {
+        background-color: var(--primary-color);
+        color: #f3f3f3;
+        }
+
+
+        .form-step {
+        display: none;
+        transform-origin: top;
+        animation: animate 0.5s;
+        }
+
+        .form-step-active {
+        display: block;
+        }
+
+        
+
+
+
+
+  
+     
+
+        select{
+            width: 30rem;
+            padding: 0.75rem !important;
+            border: .1rem solid #ccc;
+            border-radius: 0.25rem !important; 
+            margin: auto;
+            font-size: 1.5rem !important;
+            }
+
+            select:focus{
+                outline: .1rem solid dodgerblue !important;
+                box-shadow: 0 0 .8rem 0 dodgerblue !important;
+                
+            }
+    
+  
+        .contactInfo{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around ;
+          margin: 2rem !important;
+          width: 70rem;
+        }
+          label {
+            margin-bottom: 0.5rem !important;
+            font-size: 1.5rem;
+          
+            }
+          
+        
+        .input-group {
+            position: relative !important;
+            width: 30rem;
+        } 
+        input {
+            width: 30rem;
+            padding: 0.75rem !important;
+            border: .1rem solid #ccc;
+            border-radius: 0.25rem !important; 
+            font-size: 1.5rem !important;
+           
+            }
+   
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center  !important;
+        }
+
+        input:focus{
+            outline: .1rem solid dodgerblue !important;
+            box-shadow: 0 0 .8rem 0 dodgerblue !important;
+            
+        } 
+
+        @media screen and (max-width: 520px) {
+          
+            html{
+                font-size: 35% !important;
+            }
+            .label:before{
+                margin-right: 1rem !important;
+            }
+            .form{
+                width: 85%;
+            }
+
+             .contactInfo{
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .input-group{
+                margin-bottom: 3rem !important;
+                width: 35rem;
+            }
+            input{
+                width: 35rem;
+            }
+            select{
+                width: 35rem;
+            }
+            .secondInfo{
+                margin-top: -1.5rem !important;
+            }
+        
+
+        }
+
+        @media screen and (max-width: 440px) {
+           
+            .label{
+                width: 100%;
+                padding: 1rem 1rem !important;
+            }
+
+            .label div{
+                margin-left: -.5rem !important;
+            }
+
+            .form{
+               
+                width: 90%;
+                margin: auto !important;
+                margin-top: 10rem !important;
+                margin-bottom: 10rem !important;
+               
+            }
+
+            .btns-group {
+                width: 40rem !important;
+                margin: auto !important;
+                
+                }
+
+
+        }
+
+    
+
+/* Form Validation */
+
+
+
+
+
+.input-group.success input{
+border-color: #2ecc71;
+
+}
+
+.input-group.success select{
+    border-color: #2ecc71;
+    
+    }
+
+    .input-group.error select{
+        border-color: #e74c3c;
+        
+        }
+.input-group.error input{
+border-color: #e74c3c;
+
+}
+
+
+
+.input-group i{
+position: absolute !important;
+right: 0.5rem;
+top: 4rem;
+visibility: hidden;
+font-size: 1.5rem;
+}
+
+
+
+.input-group.success i.fa-circle-check{
+color: #2ecc71;
+visibility: visible;
+}
+
+.input-group.error i.fa-circle-exclamation{
+color: #e74c3c;
+visibility: visible;
+}
+
+
+.input-group small{
+color: #e74c3c;
+position: absolute !important;
+left: 0;
+top: 6.5rem;
+visibility: hidden;
+font-size: 1.5rem;
+}
+
+.input-group.error small{
+visibility: visible;
+}
